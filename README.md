@@ -6,3 +6,4 @@
 
 - Lab setup
 - Part 1: Understanding and Creating Objects
+- Part 2: Working with JSON
