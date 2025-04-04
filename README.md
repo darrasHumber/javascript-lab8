@@ -5,3 +5,4 @@
 ### Completed tasks
 
 - Lab setup
+- Part 1: Understanding and Creating Objects
