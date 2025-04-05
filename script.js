@@ -60,4 +60,31 @@ darrasCopy.graduationYear = 2021;
 console.log("darrasCopy", darrasCopy);
 //Use the spread operator to combine student.courses with a new array of courses.
 const mergedCourses = [...darras.courses, ...darrasCopy.courses];
-console.log(mergedCourses);
+console.log("Merged Courses", mergedCourses);
+
+console.log("\n================================================");
+console.log("Object Method");
+// Part 5
+// Add a method to the student object to dynamically add a new course to the courses array.
+darras.addCourse = function (courseName) {
+  this.courses.push(courseName);
+  console.log(`✅ Added "${courseName}" to courses.`);
+};
+
+// Add "Python"
+darras.addCourse("Python");
+
+// Print updated courses list
+console.log("Updated courses List", darras.courses);
+
+//Add another method to calculate and return the total number of courses.
+darras.getTotalCourses = function () {
+  return this.courses.length;
+};
+
+console.log("Number of Course", darras.getTotalCourses());
+
+darras.addCourse("Java");
+// Print updated courses list
+console.log("Updated courses List", darras.courses);
+console.log("Number of Course", darras.getTotalCourses());
