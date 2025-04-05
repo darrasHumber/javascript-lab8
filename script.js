@@ -1,5 +1,5 @@
 //Part 1
-console.log("Understanding and Creating Objects\n\n");
+console.log("Part1: Understanding and Creating Objects\n\n");
 
 //Create an object to represent a student
 const darras = {
@@ -23,7 +23,7 @@ darras.displayInfo();
 
 console.log("\n================================================");
 // Part 2
-console.log("Working with JSON");
+console.log("Part 2: Working with JSON");
 // Convert the student object into a JSON strin
 const darrasJsonString = JSON.stringify(darras, null, 2);
 // Log the JSON string to the console.
@@ -33,7 +33,7 @@ const darrasObj = JSON.parse(darrasJsonString);
 //Log the newly created object and compare it to the original.
 console.log("JSON object", darrasObj);
 console.log("\n================================================");
-console.log("Using Destructuring Assignment");
+console.log("Part 3: Using Destructuring Assignment");
 // Part 3
 //Use destructuring to extract the name and courses properties from the student object.
 
@@ -44,14 +44,14 @@ console.log("Courses:", courses);
 // Create an array of scores (e.g., [85, 92, 78, 90]).
 //Destructure the first two scores from the array and log them to the console.
 
-const arr = [85, 92, 78, 90];
+const scores = [85, 92, 78, 90];
 
-const [first, second] = arr;
-console.log("Array", arr);
-console.log("First element", first);
-console.log("Second element", second);
+const [first, second] = scores;
+console.log("Scores", scores);
+console.log("First Score", first);
+console.log("Second Score", second);
 console.log("\n================================================");
-console.log("The Spread Operator");
+console.log("Part 4: The Spread Operator");
 // Part 4
 //Clone the student object using the spread operator
 const darrasCopy = { ...darras };
@@ -63,7 +63,7 @@ const mergedCourses = [...darras.courses, ...darrasCopy.courses];
 console.log("Merged Courses", mergedCourses);
 
 console.log("\n================================================");
-console.log("Object Method");
+console.log("Part 5: Object Method");
 // Part 5
 // Add a method to the student object to dynamically add a new course to the courses array.
 darras.addCourse = function (courseName) {
@@ -88,3 +88,14 @@ darras.addCourse("Java");
 // Print updated courses list
 console.log("Updated courses List", darras.courses);
 console.log("Number of Course", darras.getTotalCourses());
+
+console.log("\n================================================");
+console.log("Bouns");
+console.log("Scores", scores);
+
+const scoresAverage = scores.reduce(
+  (sum, score) => sum + score / scores.length,
+  0
+);
+
+console.log("Average Score", scoresAverage);
