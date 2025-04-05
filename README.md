@@ -10,4 +10,4 @@
 - Part 3: Using Destructuring Assignment
 - Part 4: The Spread Operator
 - Part 5: Object Methods
--
+- Bonus
