@@ -50,3 +50,14 @@ const [first, second] = arr;
 console.log("Array", arr);
 console.log("First element", first);
 console.log("Second element", second);
+console.log("\n================================================");
+console.log("The Spread Operator");
+// Part 4
+//Clone the student object using the spread operator
+const darrasCopy = { ...darras };
+//Add a new property (e.g., graduationYear) to the cloned object and log it
+darrasCopy.graduationYear = 2021;
+console.log("darrasCopy", darrasCopy);
+//Use the spread operator to combine student.courses with a new array of courses.
+const mergedCourses = [...darras.courses, ...darrasCopy.courses];
+console.log(mergedCourses);
