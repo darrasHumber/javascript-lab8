@@ -33,3 +33,20 @@ const darrasObj = JSON.parse(darrasJsonString);
 //Log the newly created object and compare it to the original.
 console.log("JSON object", darrasObj);
 console.log("\n================================================");
+console.log("Using Destructuring Assignment");
+// Part 3
+//Use destructuring to extract the name and courses properties from the student object.
+
+const { name, courses } = darras;
+
+console.log("Name:", name);
+console.log("Courses:", courses);
+// Create an array of scores (e.g., [85, 92, 78, 90]).
+//Destructure the first two scores from the array and log them to the console.
+
+const arr = [85, 92, 78, 90];
+
+const [first, second] = arr;
+console.log("Array", arr);
+console.log("First element", first);
+console.log("Second element", second);
